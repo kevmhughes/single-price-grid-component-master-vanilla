@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+
+    --cyan: hsl(179, 62%, 43%);
+    --lime: hsl(71, 73%, 54%);
+    --grey: hsl(218, 22%, 67%);
+    --lightcyan: hsla(179, 62%, 43%, 0.699);
+    --lightgrey: hsl(204, 43%, 93%);
+} 
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Karla, sans-serif;
+    background-color: var(--lightgrey);
+    height: 100vh;
+    display: flex;
+}
+h1 {
+    font-size: 1.35rem;
+}
+.component-container {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin: auto;
+}
+
+.section-join {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.section-join__title {
+    color: var(--cyan);
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section-join___message {
+    color: var(--lime);
+    font-weight: 600;
+}
+
+.section-join___description {
+    color: var(--grey);
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.section-subscription {
+    background-color: var(--cyan);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-subscription__title {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section-subscription__priceContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.section-subscription__price {
+    font-size: 1.5rem;
+}
+
+.section-subscription__time {
+    opacity: 70%;
+}
+
+.section-subscription__message {
+    margin-bottom: 20px;
+}
+
+
+.section-subscription__button {
+    background-color: var(--lime);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px grey;
+    margin-bottom: 5px;
+}
+
+.section-whyus {
+    background-color: var(--lightcyan);
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.section-whyus__title {
+    font-size: 18px;
+}
+
+.section-whyus__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.section-whyus__listItem {
+    opacity: 70%;
+}
+
+/* media query 365px - smallest mobile */
+
+/* media query min 600px - converts to a grid
+
+/** Crear una media query para que cuando lleguemos a un mínimo de 600px de viewport, el .section se convierte en 1 frid de 2 filas y 2 columnas. La primera fila debe ocupar 2 columnas, usando la propiedad grid-column adecuadamente. Repasad los ejemplos de grid del repo de clase de ejemplos. También tenemos que ajustar en esta media query los border-radius !! */

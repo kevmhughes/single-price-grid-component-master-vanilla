@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  </head>
+  <body>
+    <div class="component-container">
+      <div class="section-join">
+        <h1 class="section-join__title">Join our community</h1>
+        <p class="section-join___message">
+          30-day, hassle-free money back guarantee
+        </p>
+        <p class="section-join___description">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
 
-</head>
-<body>
-  Join our community
+      <div class="section-subscription">
+        <h2 class="section-subscription__title">Monthly Subscription</h2>
+        <div class="section-subscription__priceContainer">
+          <p class="section-subscription__price">&dollar;29</p>
+          <p class="section-subscription__time">per month</p>
+        </div>
+        <p class="section-subscription__message">Full access for less than &dollar;1 a day</p>
+        <a href="" class="section-subscription__button">Sign Up </a>
+      </div>
 
-  30-day, hassle-free money back guarantee
+      <div class="section-whyus">
+        <h2 class="section-whyus__title">Why Us</h2>
+        <ul class="section-whyus__list">
+          <li class="section-whyus__listItem">Tutorials by industry experts</li>
+          <li class="section-whyus__listItem">Peer &amp; expert code review</li>
+          <li class="section-whyus__listItem">Coding exercises</li>
+          <li class="section-whyus__listItem">Access to our GitHub repos</li>
+          <li class="section-whyus__listItem">Community forum</li>
+          <li class="section-whyus__listItem">Flashcard decks</li>
+          <li class="section-whyus__listItem">New videos every week</li>
+        </ul>
+      </div>
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+    </div>
 
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  </body>
 </html>
