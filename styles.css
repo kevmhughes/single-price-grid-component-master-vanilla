@@ -1,137 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 :root {
-
-    --cyan: hsl(179, 62%, 43%);
-    --lime: hsl(71, 73%, 54%);
-    --grey: hsl(218, 22%, 67%);
-    --lightcyan: hsla(179, 62%, 43%, 0.699);
-    --lightgrey: hsl(204, 43%, 93%);
-} 
+  --cyan: hsl(179, 62%, 43%);
+  --brightyellow: hsl(71, 73%, 54%);
+  --grayishblue: hsl(218, 22%, 67%);
+  --lightcyan: hsla(179, 62%, 43%, 0.699);
+  --lightgray: hsl(204, 43%, 93%);
+}
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: Karla, sans-serif;
-    background-color: var(--lightgrey);
-    height: 100vh;
-    display: flex;
+  font-family: Karla, sans-serif;
+  background-color: var(--lightgray);
+  height: 100vh;
+  display: flex;
 }
 h1 {
-    font-size: 1.35rem;
+  font-size: 1.35rem;
 }
 .component-container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    min-width: 340px;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-width: 340px;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px 3px rgba(175, 175, 175, 0.2);
 }
 
 .section-join {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
 }
 
 .section-join__title {
-    color: var(--cyan);
-    font-weight: 600;
-    font-size: 22px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .section-join___message {
-    color: var(--lime);
-    font-weight: 600;
+  color: var(--brightyellow);
+  font-weight: 700;
 }
 
 .section-join___description {
-    color: var(--grey);
-    line-height: 1.75;
-    margin-bottom: 20px;
+  color: var(--grayishblue);
+  line-height: 1.75;
+  margin-bottom: 20px;
 }
 
 .section-subscription {
-    background-color: var(--cyan);
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  background-color: var(--cyan);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .section-subscription__title {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 10px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.section-subscription__priceContainer{
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.section-subscription__priceContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .section-subscription__price {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .section-subscription__time {
-    opacity: 70%;
+  opacity: 60%;
 }
 
 .section-subscription__message {
-    margin-bottom: 20px;
-    opacity: 70%;
+  margin-bottom: 20px;
+  opacity: 60%;
 }
 
-
 .section-subscription__button {
-    background-color: var(--lime);
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px 0px grey;
-    margin-bottom: 5px;
+  background-color: var(--brightyellow);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px 0px grey;
+  margin-bottom: 5px;
 }
 
 .section-whyus {
-    background-color: var(--lightcyan);
-    padding: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 0 0 5px 5px;
+  background-color: var(--lightcyan);
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 0 0 5px 5px;
 }
 
 .section-whyus__title {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .section-whyus__list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
 }
 
 .section-whyus__listItem {
-    opacity: 70%;
+  opacity: 60%;
 }
 
-/* media query 365px - smallest mobile */
+@media (min-width: 600px) {
+  .component-container {
+    display: grid;
+    max-width: 1000px;
+  }
 
-/* media query min 600px - converts to a grid
+  .section-join {
+    grid-column: 1 / 3;
+    border-radius: 5px 5px 0 0;
+    padding: 2rem;
+  }
 
-/** Crear una media query para que cuando lleguemos a un mínimo de 600px de viewport, el .section se convierte en 1 frid de 2 filas y 2 columnas. La primera fila debe ocupar 2 columnas, usando la propiedad grid-column adecuadamente. Repasad los ejemplos de grid del repo de clase de ejemplos. También tenemos que ajustar en esta media query los border-radius !! */
+  .section-subscription {
+    border-radius: 0 0 0 5px;
+    padding: 2rem;
+    justify-content: space-around;
+  }
+
+  .section-subscription__price {
+    font-size: 2rem;
+  }
+
+  .section-whyus {
+    border-radius: 0 0 5px 0;
+    padding: 2rem;
+  }
+}
